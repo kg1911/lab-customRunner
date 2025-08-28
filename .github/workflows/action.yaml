@@ -1,0 +1,13 @@
+name: Says Echo
+
+on: [push]
+
+jobs:
+  build:
+    run-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+      uses: actions/checkout@v4
+
+      - name: Says Hello
+      run: echo "Hello Cloud Gurus"
